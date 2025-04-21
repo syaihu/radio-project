@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎶 Online Radio Station</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button class="toggle-mode" onclick="toggleDarkMode()">🌓 Mode</button>
+  <h1>🎶 Online Radio 📻</h1>
+  <div class="radio-container">
+    <div class="player">
+      <h2>Now Playing</h2>
+      <audio controls>
+        <source src="https://example.com/stream.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="request-form">
+      <h2>🎵 Request a Song</h2>
+      <input type="text" id="song-request" placeholder="Enter song title or artist" />
+      <button onclick="sendRequest()">Request</button>
+      <div id="notif" class="notification">🎉 Request sent successfully!</div>
+    </div>
+
+    <div class="playlist">
+      <h2>📋 Playlist</h2>
+      <ul id="playlist">
+        <!-- Playlist items will go here -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
