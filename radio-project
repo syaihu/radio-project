@@ -1,0 +1,18 @@
+radio-project/
+│
+├── backend/                         # Backend Python server
+│   ├── backend.py                  # Server API dan WebSocket
+│   └── requirements.txt            # Dependencies backend
+│
+├── bot/                             # IRC bot
+│   └── bot.py                      # Bot IRC yang mengirim request lagu ke server
+│
+├── frontend/                        # Web UI untuk radio
+│   ├── index.html                  # Halaman utama radio
+│   ├── style.css                   # Tampilan website
+│   └── script.js                   # Interaksi & WebSocket client
+│
+├── static/                          # Folder optional (untuk assets tambahan, musik lokal, dll)
+│   └── ding.mp3                    # Contoh file mp3 statis
+│
+└── README.md                        # Dokumentasi penggunaan & instalasi
